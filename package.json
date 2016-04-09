@@ -1,0 +1,24 @@
+{
+  "name": "react-justified-layout",
+  "version": "0.0.2",
+  "description": "Flickr's justified-layout as a React component",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dean177/react-justified-layout.git"
+  },
+  "keywords": [
+    "React",
+    "Flickr",
+    "justified-layout"
+  ],
+  "author": "Dean Merchant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dean177/react-justified-layout/issues"
+  },
+  "homepage": "https://github.com/Dean177/react-justified-layout#readme"
+}
