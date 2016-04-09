@@ -1,9 +1,13 @@
 {
   "name": "react-justified-layout",
-  "version": "0.0.2",
+  "version": "0.0.0",
   "description": "Flickr's justified-layout as a React component",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "demo": "webpack --config webpack.demo.config.js",
+    "dist": "babel ./src/react-justified-layout.js --out-file ./dist/index.js",
+    "lint": "eslint src/**/*.js",
+    "start": "node server.js",
     "test": "mocha test"
   },
   "repository": {
@@ -15,10 +19,38 @@
     "Flickr",
     "justified-layout"
   ],
-  "author": "Dean Merchant",
+  "author": "Dean Merchant <deanmerchant@gmail.com> (http://github.com/dean177)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Dean177/react-justified-layout/issues"
   },
-  "homepage": "https://github.com/Dean177/react-justified-layout#readme"
+  "homepage": "https://github.com/Dean177/react-justified-layout",
+  "dependencies": {
+    "justified-layout": "0.0.2",
+    "lodash": "^4.9.0"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.7.5",
+    "babel-core": "^6.7.6",
+    "babel-eslint": "^6.0.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-react": "^6.5.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "chai": "^3.5.0",
+    "css-loader": "^0.23.1",
+    "enzyme": "^2.2.0",
+    "eslint": "^2.7.0",
+    "eslint-plugin-react": "^4.3.0",
+    "file-loader": "^0.8.5",
+    "mocha": "^2.4.5",
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.12.14",
+    "webpack-dev-server": "^1.14.1"
+  }
 }

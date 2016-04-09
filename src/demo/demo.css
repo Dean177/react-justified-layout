@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: sans-serif;
+}
+
+h1, h2 {
+    margin-top: 60px;
+}
+
+.demo {
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+pre {
+ padding: 10px;
+ background-color: aliceblue;
+}
