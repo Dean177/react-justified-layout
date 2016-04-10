@@ -85,7 +85,7 @@ class SomeComponent extends React.Component {
         <h2>Container Padding</h2>
         <pre>
           <code>
-            {`<JustifiedLayout containerPadding={50}>`}
+            {'<JustifiedLayout containerPadding={50}>'}
           </code>
         </pre>
         <JustifiedLayout containerPadding={50}
@@ -98,7 +98,7 @@ class SomeComponent extends React.Component {
         <h2>Uneven Container Padding Config</h2>
         <pre>
           <code>
-            {`<JustifiedLayout containerPadding={{ top: 50, right: 20, left: 120, bottom: 50 }}>`}
+            {'<JustifiedLayout containerPadding={{ top: 50, right: 20, left: 120, bottom: 50 }}>'}
           </code>
         </pre>
         <JustifiedLayout containerPadding={{ top: 50, right: 20, left: 120, bottom: 50 }}
@@ -111,7 +111,7 @@ class SomeComponent extends React.Component {
         <h2>Target Row Height</h2>
         <pre>
           <code>
-            {`<JustifiedLayout targetRowHeight={100}>`}
+            {'<JustifiedLayout targetRowHeight={100}>'}
           </code>
         </pre>
         <JustifiedLayout targetRowHeight={100}
@@ -123,7 +123,7 @@ class SomeComponent extends React.Component {
         <h2>Force Aspect Ratio</h2>
         <pre>
           <code>
-            {`<JustifiedLayout forceAspectRatio={1}>`}
+            {'<JustifiedLayout forceAspectRatio={1}>'}
           </code>
         </pre>
         <JustifiedLayout targetRowHeight={160}
@@ -154,7 +154,7 @@ class SomeComponent extends React.Component {
         <h2>Full Width Breakout Row</h2>
         <pre>
           <code>
-            {`<JustifiedLayout fullWidthBreakoutRowCadence={2}>`}
+            {'<JustifiedLayout fullWidthBreakoutRowCadence={2}>'}
           </code>
         </pre>
         <JustifiedLayout targetRowHeight={160}

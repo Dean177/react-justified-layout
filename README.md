@@ -16,5 +16,5 @@ const JustifiedLayout = require('react-justified-layout');
 ## Development
 npm install
 npm start
-open demo/demo.html
+open http://localhost:3000
 npm test

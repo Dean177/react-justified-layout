@@ -4,8 +4,8 @@
   "description": "Flickr's justified-layout as a React component",
   "main": "dist/index.js",
   "scripts": {
-    "demo": "webpack --config webpack.demo.config.js",
     "dist": "babel ./src/react-justified-layout.js --out-file ./dist/index.js",
+    "gh-pages": "webpack --config webpack.demo.config.js",
     "lint": "eslint src/**/*.js",
     "start": "node server.js",
     "test": "mocha test"
