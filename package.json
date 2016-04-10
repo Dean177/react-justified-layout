@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dist": "babel ./src/react-justified-layout.js --out-file ./dist/index.js",
-    "gh-pages": "webpack --config webpack.demo.config.js",
+    "gh-pages": "webpack --config webpack.gh-pages.config.js",
     "lint": "eslint src/**/*.js",
     "start": "node server.js",
     "test": "mocha test"

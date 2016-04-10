@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'demo'),
     filename: 'index.js',
-    publicPath: '/demo/'
+    publicPath: '/react-justified-layout/demo/'
   },
   plugins: [new webpack.optimize.UglifyJsPlugin({
     compress: { warnings: false }
