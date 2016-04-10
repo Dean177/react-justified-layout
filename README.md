@@ -2,7 +2,7 @@
 Flickr's justified layout as a React component
 
 ## Usage
-
+See [here](http://dean177.github.io/react-justified-layout/) for documentation & demo.
 ```
 const JustifiedLayout = require('react-justified-layout');
 
@@ -16,5 +16,5 @@ const JustifiedLayout = require('react-justified-layout');
 ## Development
 npm install
 npm start
-open demo/demo.html
+open http://localhost:3000
 npm test
