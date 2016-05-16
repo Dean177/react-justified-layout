@@ -9,7 +9,7 @@ const JustifiedLayout = require('react-justified-layout');
 <JustifiedLayout ...opts>
     <img style={{ height:1920, width: 1080 }} src="" />
     <div aspectRatio={1.8}>Some Div</div>
-    <CustomComponent style={}
+    <CustomComponent style={} />
 </JustifiedLayout>
 ```
 
