@@ -7,9 +7,9 @@ See [here](http://dean177.github.io/react-justified-layout/) for documentation &
 const JustifiedLayout = require('react-justified-layout');
 
 <JustifiedLayout ...opts>
-    <img style={{ height:1920, width: 1080 }} src="" />
+    <img style={{ height:1920, width: 1080 }} src="http://awwwwww.com/1" />
     <div aspectRatio={1.8}>Some Div</div>
-    <CustomComponent style={} />
+    <CustomComponent style={{ backgroundColor: '#ffffff'}} />
 </JustifiedLayout>
 ```
 
