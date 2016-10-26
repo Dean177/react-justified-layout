@@ -4,12 +4,12 @@
   "description": "Flickr's justified-layout as a React component",
   "main": "dist/index.js",
   "scripts": {
-    "dist": "babel ./src/react-justified-layout.js --out-file ./dist/index.js",
+    "dist": "mkdirp dist && babel ./src/react-justified-layout.js --out-file ./dist/index.js",
     "gh-pages": "webpack --config webpack.gh-pages.config.js",
     "lint": "eslint src/**/*.js",
     "start": "node server.js",
     "test": "mocha test",
-    "prepublish": "npm test && npm lint"
+    "prepublish": "npm test && npm run lint"
   },
   "repository": {
     "type": "git",
@@ -27,10 +27,10 @@
   },
   "homepage": "https://github.com/Dean177/react-justified-layout",
   "dependencies": {
-    "justified-layout": "0.0.2",
     "lodash": "^4.9.0"
   },
   "peerDependencies": {
+    "justified-layout": "^2.1.0",
     "react": "^15.0.0"
   },
   "devDependencies": {
@@ -38,6 +38,7 @@
     "babel-core": "^6.7.6",
     "babel-eslint": "^6.0.2",
     "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.18.0",
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-0": "^6.5.0",
     "chai": "^3.5.0",
@@ -46,6 +47,8 @@
     "eslint": "^2.7.0",
     "eslint-plugin-react": "^4.3.0",
     "file-loader": "^0.8.5",
+    "justified-layout": "^2.1.0",
+    "mkdirp": "^0.5.1",
     "mocha": "^2.4.5",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
