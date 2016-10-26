@@ -27,10 +27,10 @@
   },
   "homepage": "https://github.com/Dean177/react-justified-layout",
   "dependencies": {
-    "justified-layout": "0.0.2",
     "lodash": "^4.9.0"
   },
   "peerDependencies": {
+    "justified-layout": "^0.0.2",
     "react": "^15.0.0"
   },
   "devDependencies": {
@@ -47,6 +47,7 @@
     "eslint": "^2.7.0",
     "eslint-plugin-react": "^4.3.0",
     "file-loader": "^0.8.5",
+    "justified-layout": "^0.0.2",
     "mkdirp": "^0.5.1",
     "mocha": "^2.4.5",
     "react": "^15.0.1",
