@@ -58,7 +58,8 @@ const JustPropTypes = {
   maxNumRows: React.PropTypes.number,
   showWidows: React.PropTypes.bool,
   targetRowHeight: React.PropTypes.number,
-  targetRowHeightTolerance: React.PropTypes.number
+  targetRowHeightTolerance: React.PropTypes.number,
+  widowLayoutStyle: React.PropTypes.string
 };
 
 const JustDefaultProps = {
@@ -70,7 +71,8 @@ const JustDefaultProps = {
   maxNumRows: Number.POSITIVE_INFINITY,
   showWidows: true,
   targetRowHeight: 320,
-  targetRowHeightTolerance: 0.25
+  targetRowHeightTolerance: 0.25,
+  widowLayoutStyle: 'left'
 };
 
 class JustifiedLayout extends React.Component {
