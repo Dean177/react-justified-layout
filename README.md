@@ -18,6 +18,6 @@ const JustifiedLayout = require('react-justified-layout');
 npm install
 npm start
 open http://localhost:3000
-npm lint
+npm run lint
 npm test
 ```
