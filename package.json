@@ -27,7 +27,8 @@
   },
   "homepage": "https://github.com/Dean177/react-justified-layout",
   "dependencies": {
-    "lodash": "^4.9.0"
+    "lodash": "^4.9.0",
+    "prop-types": "^15.6.0"
   },
   "peerDependencies": {
     "justified-layout": "^2.1.0",
