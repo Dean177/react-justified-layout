@@ -21,3 +21,8 @@ open http://localhost:3000
 npm run lint
 npm test
 ```
+
+### Contributors 
+Thanks to:
+- [ivantumanov](https://github.com/ivantumanov) 
+- [ohtake](https://github.com/ohtake)

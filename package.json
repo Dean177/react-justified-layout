@@ -21,6 +21,10 @@
     "justified-layout"
   ],
   "author": "Dean Merchant <deanmerchant@gmail.com> (http://github.com/dean177)",
+  "contributors": [
+    "ivantumanov",
+    "ohtake"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Dean177/react-justified-layout/issues"
