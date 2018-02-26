@@ -1,10 +1,10 @@
 const isNumber = require('lodash/isNumber');
-const justifiedLayout = require('justified-layout');
 const map = require('lodash/map');
-const React = require('react');
-const PropTypes = require('prop-types');
 const take = require('lodash/take');
 const zip = require('lodash/zip');
+const justifiedLayout = require('justified-layout');
+const PropTypes = require('prop-types');
+const React = require('react');
 
 function extractDimension({ props }) {
   if (!props) {
