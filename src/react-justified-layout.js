@@ -2,6 +2,7 @@ const isNumber = require('lodash/isNumber');
 const justifiedLayout = require('justified-layout');
 const map = require('lodash/map');
 const React = require('react');
+const PropTypes = require('prop-types');
 const take = require('lodash/take');
 const zip = require('lodash/zip');
 
@@ -32,34 +33,34 @@ function normalizeDimension(dimension) {
 const Style = { position: 'relative' };
 
 const JustPropTypes = {
-  boxSpacing: React.PropTypes.oneOfType([
-    React.PropTypes.number,
-    React.PropTypes.shape({
-      horizontal: React.PropTypes.number.isRequired,
-      vertical: React.PropTypes.number.isRequired,
+  boxSpacing: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.shape({
+      horizontal: PropTypes.number.isRequired,
+      vertical: PropTypes.number.isRequired,
     })
   ]),
-  children: React.PropTypes.node,
-  containerPadding: React.PropTypes.oneOfType([
-    React.PropTypes.number,
-    React.PropTypes.shape({
-      bottom: React.PropTypes.number.isRequired,
-      left: React.PropTypes.number.isRequired,
-      right: React.PropTypes.number.isRequired,
-      top: React.PropTypes.number.isRequired
+  children: PropTypes.node,
+  containerPadding: PropTypes.oneOfType([
+    PropTypes.number,
+    PropTypes.shape({
+      bottom: PropTypes.number.isRequired,
+      left: PropTypes.number.isRequired,
+      right: PropTypes.number.isRequired,
+      top: PropTypes.number.isRequired
     })
   ]),
-  containerWidth: React.PropTypes.number,
-  forceAspectRation: React.PropTypes.oneOfType([React.PropTypes.boolean, React.PropTypes.number]),
-  fullWidthBreakoutRowCadence: React.PropTypes.oneOfType([
-    React.PropTypes.boolean,
-    React.PropTypes.number
+  containerWidth: PropTypes.number,
+  forceAspectRation: PropTypes.oneOfType([PropTypes.boolean, PropTypes.number]),
+  fullWidthBreakoutRowCadence: PropTypes.oneOfType([
+    PropTypes.boolean,
+    PropTypes.number
   ]),
-  maxNumRows: React.PropTypes.number,
-  showWidows: React.PropTypes.bool,
-  targetRowHeight: React.PropTypes.number,
-  targetRowHeightTolerance: React.PropTypes.number,
-  widowLayoutStyle: React.PropTypes.string
+  maxNumRows: PropTypes.number,
+  showWidows: PropTypes.bool,
+  targetRowHeight: PropTypes.number,
+  targetRowHeightTolerance: PropTypes.number,
+  widowLayoutStyle: PropTypes.string
 };
 
 const JustDefaultProps = {
