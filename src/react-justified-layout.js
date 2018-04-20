@@ -37,7 +37,7 @@ const JustPropTypes = {
     PropTypes.number,
     PropTypes.shape({
       horizontal: PropTypes.number.isRequired,
-      vertical: PropTypes.number.isRequired,
+      vertical: PropTypes.number.isRequired
     })
   ]),
   children: PropTypes.node,
@@ -51,9 +51,9 @@ const JustPropTypes = {
     })
   ]),
   containerWidth: PropTypes.number,
-  forceAspectRation: PropTypes.oneOfType([PropTypes.boolean, PropTypes.number]),
+  forceAspectRation: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
   fullWidthBreakoutRowCadence: PropTypes.oneOfType([
-    PropTypes.boolean,
+    PropTypes.bool,
     PropTypes.number
   ]),
   maxNumRows: PropTypes.number,
