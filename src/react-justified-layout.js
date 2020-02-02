@@ -51,7 +51,7 @@ const JustPropTypes = {
     })
   ]),
   containerWidth: PropTypes.number,
-  forceAspectRation: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
+  forceAspectRatio: PropTypes.oneOfType([PropTypes.bool, PropTypes.number]),
   fullWidthBreakoutRowCadence: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.number
@@ -60,20 +60,22 @@ const JustPropTypes = {
   showWidows: PropTypes.bool,
   targetRowHeight: PropTypes.number,
   targetRowHeightTolerance: PropTypes.number,
-  widowLayoutStyle: PropTypes.string
+  widowLayoutStyle: PropTypes.string,
+  preserveAspectRatioTag: PropTypes.bool
 };
 
 const JustDefaultProps = {
   boxSpacing: 10,
   containerPadding: 10,
   containerWidth: 1060,
-  forceAspectRation: false,
+  forceAspectRatio: false,
   fullWidthBreakoutRowCadence: false,
   maxNumRows: Number.POSITIVE_INFINITY,
   showWidows: true,
   targetRowHeight: 320,
   targetRowHeightTolerance: 0.25,
-  widowLayoutStyle: 'left'
+  widowLayoutStyle: 'left',
+  preserveAspectRatioTag: false
 };
 
 class JustifiedLayout extends React.Component {
@@ -82,7 +84,7 @@ class JustifiedLayout extends React.Component {
   static defaultProps: JustDefaultProps;
 
   render() {
-    const { children, style, ...config } = this.props;
+    const { children, style, preserveAspectRatioTag, ...config } = this.props;
     const childDims = React.Children
       .map(children, extractDimension)
       .map(normalizeDimension);
@@ -94,10 +96,17 @@ class JustifiedLayout extends React.Component {
       <div style={{ ...Style, ...style, height: containerHeight, width: this.props.containerWidth }}>
         {map(elementLayout, ([element, layout]) => {
           const { height, left, top, width } = layout;
+
+          // Remove aspectRatio tag when rendering to prevent React errors:
+          let elementProps = element.props;
+          if (!preserveAspectRatioTag) {
+            delete elementProps.aspectRatio;
+          }
+
           return React.cloneElement(element, {
-            ...element.props,
+            ...elementProps,
             style: {
-              ...element.props.style,
+              ...elementProps.style,
               position: 'absolute',
               height, left, top, width
             }

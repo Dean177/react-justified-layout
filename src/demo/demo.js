@@ -52,7 +52,9 @@ class Demo extends React.Component {
         <h2>Usage</h2>
         <p>
           Every element contained within <code>{'<JustifiedLayout>'}</code> must have either
-          height and width 'style' props, or have an 'aspectRatio' prop
+          height and width 'style' props, or have an 'aspectRatio' prop. If the 'aspectRatio'
+          prop is present, it will be removed before rendering. This prop can be preserved
+          by setting the 'preserveAspectRatioTag' prop to true.
         </p>
         <pre>
           <code>{`
