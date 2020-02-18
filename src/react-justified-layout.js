@@ -100,7 +100,8 @@ class JustifiedLayout extends React.Component {
           // Remove aspectRatio tag when rendering to prevent React errors:
           let elementProps = element.props;
           if (!preserveAspectRatioTag) {
-            delete elementProps.aspectRatio;
+            let { aspectRatio, ...rest } = element.props;
+            elementProps = rest;
           }
 
           return React.cloneElement(element, {

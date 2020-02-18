@@ -26,3 +26,4 @@ npm test
 Thanks to:
 - [ivantumanov](https://github.com/ivantumanov) 
 - [ohtake](https://github.com/ohtake)
+- [eiwi1101](https://github.com/eiwi1101)
